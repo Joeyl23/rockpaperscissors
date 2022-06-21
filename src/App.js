@@ -47,6 +47,12 @@ function App() {
     if(running){}else{
       setRunning(true);
 
+      setTimeout(() =>{
+        setCplayer(player);
+        setCcom(com);
+        results();
+      },2400)
+
       complay();
 
       setTimeout(() =>{
@@ -62,7 +68,6 @@ function App() {
   function complay(){
 
     const num1 = Math.random() * 100;
-    console.log(num1);
 
     if(num1<=33){
       setCom(frock);
@@ -90,19 +95,11 @@ function App() {
       }
   }
   
-  useEffect(() =>{
-    if(running){
-      setTimeout(() =>{
-        setCplayer(player);
-        setCcom(com);
-        results();
-      },2400)
-    }
 
-  },[running])
 
   useEffect(() =>{
     console.log('hello there');
+    complay();
   },[])
 
   return (
