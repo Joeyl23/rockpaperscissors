@@ -170,7 +170,8 @@ function App() {
 {annOpen && <Announce current={current} />}
 
 
-<div className='absolute lg:fixed bottom-0 right-0 border-2 border-black'>
+<div className='absolute lg:fixed bottom-0 right-0 border-2 border-black text-center'>
+    made by <a href='https://joey-larsen.netlify.app' className='font-bold' target="_blank" rel='noreferrer'>Joey Larsen</a><br></br>
     Icons from <a href='https://www.icons8.com' className='font-bold' target="_blank" rel='noreferrer'>Icons8.com</a>
 </div>
 
